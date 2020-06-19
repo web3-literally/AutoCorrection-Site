@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OMR - AutoCorrection</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="resources/global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/core.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+
+    <link href="resources/assets/css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="resources/global_assets/js/plugins/loaders/pace.min.js"></script>
+    <script src="resources/global_assets/js/core/libraries/jquery.min.js"></script>
+    <script src="resources/global_assets/js/core/libraries/bootstrap.min.js"></script>
+    <script src="resources/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="resources/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="resources/global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+    <script src="resources/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+    <script src="resources/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <!-- /theme JS files -->
+
+    <script src="resources/assets/js/app.js"></script>
+
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="resources/global_assets/images/logo_light.png" alt=""></a>
+
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="resources/global_assets/images/placeholders/placeholder.jpg" alt="">
+                        <span>Developer</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                        <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                        <li><a href="#"><span class="badge bg-blue pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /main navbar -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main">
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user">
+                    <div class="category-content">
+                        <div class="media">
+                            <a href="#" class="media-left"><img src="resources/global_assets/images/placeholders/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">Developer</span>
+                                <div class="text-size-mini text-muted">
+                                    <i class="icon-pin text-size-small"></i> &nbsp;Victoria, Brazil
+                                </div>
+                            </div>
+
+                            <div class="media-right media-middle">
+                                <ul class="icons-list">
+                                    <li>
+                                        <a href="#"><i class="icon-cog3"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <!-- Main -->
+                            <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                            <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Exams</span></a></li>
+                            <li><a href="candidates.html"><i class="icon-users"></i> <span>Candidates</span></a></li>
+                            <li><a href="questions.html"><i class="icon-question3"></i> <span>Questions</span></a></li>
+                            <li><a href="domains.html"><i class="icon-bucket"></i> <span>Domains</span></a></li>
+                            <li><a href="specialists.html"><i class="note-icon-special-character"></i> <span>Special Lists</span></a></li>
+                            <li><a href="documents.html"><i class="icon-file-pdf"></i> <span>Documents</span></a></li>
+                            <!-- /page kits -->
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- /main sidebar -->
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-default">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Exams</span> - List</h4>
+                    </div>
+                </div>
+
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+                        <li><a href="index.html">Exams</a></li>
+                        <li class="active">List</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /page header -->
+
+            <!-- Content area -->
+            <div class="content">
+                <!-- List Exam -->
+                <div class="panel panel-flat">
+                    <div class="panel-heading mb-10">
+                        <h5 class="panel-title">Exams</h5>
+                        <div class="heading-elements">
+                            <ul class="icons-list" style="display: flex; align-items: center;">
+                                <li><button type="button" class="btn btn-primary btn-xs mr-10" style="float: right;" onclick="location.href = 'exam_create.html'">Create Exam</button></li>
+                                <li><a data-action="collapse"></a></li>
+                                <li><a data-action="reload"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-bordered" id="dt_list_exam">
+                            <thead class="bg-teal-400">
+                            <tr>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Reference</th>
+                                <th class="text-center">Type</th>
+                                <th class="text-center">Start Time</th>
+                                <th width="170px" class="text-center">Duration (min)</th>
+                                <th width="100px" class="text-center">Detail</th>
+                                <th width="100px" class="text-center">Delete</th>
+<!--                                <th class="text-center">Duplicate</th>-->
+<!--                                <th class="text-center">Print</th>-->
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /List Exam -->
+
+
+                <!-- Footer -->
+                <div class="footer text-muted">
+                    &copy; 2020. <a href="#">OMR Web App Kit</a> by <a href="#" target="_blank">Carlos</a>
+                </div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+<script src="main/js/config.js"></script>
+<script src="main/js/local_info.js"></script>
+<script src="main/js/navigation.js"></script>
+<script src="main/js/exam_list.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OMR - AutoCorrection</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="resources/global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/core.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="resources/global_assets/js/plugins/loaders/pace.min.js"></script>
+    <script src="resources/global_assets/js/core/libraries/jquery.min.js"></script>
+    <script src="resources/global_assets/js/core/libraries/bootstrap.min.js"></script>
+    <script src="resources/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="resources/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="resources/global_assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script src="resources/global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+    <script src="resources/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+    <script src="resources/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="resources/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+    <script src="resources/assets/js/app.js"></script>
+    <!-- /theme JS files -->
+
+    <!-- Custom javascript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <!-- /Custom css files -->
+
+    <!-- Custom css files -->
+    <link href="resources/assets/css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /Custom css files -->
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="resources/global_assets/images/logo_light.png" alt=""></a>
+
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="resources/global_assets/images/placeholders/placeholder.jpg" alt="">
+                        <span>Developer</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                        <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                        <li><a href="#"><span class="badge bg-blue pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /main navbar -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main">
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user">
+                    <div class="category-content">
+                        <div class="media">
+                            <a href="#" class="media-left"><img src="resources/global_assets/images/placeholders/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">Developer</span>
+                                <div class="text-size-mini text-muted">
+                                    <i class="icon-pin text-size-small"></i> &nbsp;Victoria, Brazil
+                                </div>
+                            </div>
+
+                            <div class="media-right media-middle">
+                                <ul class="icons-list">
+                                    <li>
+                                        <a href="#"><i class="icon-cog3"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <!-- Main -->
+                            <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                            <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Exams</span></a></li>
+                            <li><a href="candidates.html"><i class="icon-users"></i> <span>Candidates</span></a></li>
+                            <li><a href="questions.html"><i class="icon-question3"></i> <span>Questions</span></a></li>
+                            <li><a href="domains.html"><i class="icon-bucket"></i> <span>Domains</span></a></li>
+                            <li><a href="specialists.html"><i class="note-icon-special-character"></i> <span>Special Lists</span></a></li>
+                            <li><a href="documents.html"><i class="icon-file-pdf"></i> <span>Documents</span></a></li>
+                            <!-- /page kits -->
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- /main sidebar -->
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-default">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i>Modify Exam</h4>
+                    </div>
+                </div>
+
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+                        <li><a href="index.html">Exams</a></li>
+                        <li class="active">Modify</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /page header -->
+
+            <!-- Content area -->
+            <div class="content">
+                <!-- Exam Data -->
+                <div class="panel panel-flat">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Exam</h5>
+                        <div class="heading-elements">
+                            <ul class="icons-list" style="display: flex; align-items: center;">
+                                <li><button type="button" class="btn btn-primary btn-xs" id="btn_modify_exam">Modify</button></li>
+                                <li><button type="button" class="btn btn-danger btn-xs mr-10" id="btn_delete_exam">Delete</button></li>
+<!--                                <li><button type="button" class="btn bg-green btn-xs">Duplicate</button></li>-->
+<!--                                <li><button type="button" class="btn bg-brown btn-xs mr-10">Print</button></li>-->
+                                <li><a data-action="collapse"></a></li>
+                                <li><a data-action="reload"></a></li>
+                                <!--                                <li><a data-action="close"></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <form id="input_form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <input type="text" class="form-control" name="name" placeholder="Enter exam name">
+                                        <span class="help-block">Ex: Informaticient Fonction Publique</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Display Name: </label>
+                                        <input type="text" class="form-control" name="displayname" placeholder="Enter exam display name">
+                                        <span class="help-block">Ex: INFO-2020-50</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Description: </label>
+                                        <input type="text" class="form-control" name="description" placeholder="Enter description for the exam">
+                                        <span class="help-block">Ex: concours Prof de la fonction Publique pour le recrutement d'Informaticiens</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Decret Description: </label>
+                                        <input type="text" class="form-control" name="decretdescription" placeholder="Enter decret description for the exam">
+                                        <span class="help-block">Ex: Decret portant recrutement de 50 Informaticiens</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Reference: </label>
+                                        <input type="text" class="form-control" name="reference" placeholder="Enter exam reference">
+                                        <span class="help-block">Ex: PRES-2020-03-01</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Start Date: </label>
+                                        <input type="date" class="form-control" name="exam_date" placeholder="Enter exam start date">
+                                        <span class="help-block">Ex: 05/23/2020</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Start Time: </label>
+                                        <input type="time" class="form-control" name="exam_time" placeholder="Enter exam start time">
+                                        <span class="help-block">Ex: 12:30 PM</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Duration (min): </label>
+                                        <input type="number" min="10" max="10000" class="form-control" name="duration" placeholder="Enter exam duration">
+                                        <span class="help-block">Ex: 120</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type: </label>
+                                        <input type="text" class="form-control" name="type" placeholder="Enter exam type">
+                                        <span class="help-block">Ex: PRO</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Exam Data -->
+
+                <!-- Questions & Answers -->
+                <div class="panel panel-flat">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Questions & Answers</h5>
+                        <div class="heading-elements">
+                            <ul class="icons-list" style="display: flex; align-items: center;">
+                                <li><button type="button" class="btn bg-blue-400 btn-xs" data-toggle="modal" data-target="#modal_add_qa">Add Question & Answer</button></li>
+                                <li><button type="button" class="btn bg-brown btn-xs" id="btn_print_autocorrection">Print Autocorrection ORM</button></li>
+                                <li><button type="button" class="btn bg-brown btn-xs mr-10" id="btn_print_answer">Print Answer ORM</button></li>
+                                <li><a data-action="collapse"></a></li>
+                                <li><a data-action="reload"></a></li>
+                                <!--                                <li><a data-action="close"></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dt_exam_qa">
+                                <thead>
+                                <tr class="bg-teal-400">
+                                    <th width="100px" class="text-center">Order</th>
+                                    <th width="100px" class="text-center">Difficulty</th>
+                                    <th class="text-center">Questions</th>
+                                    <th class="text-center">Answer1</th>
+                                    <th class="text-center">Answer2</th>
+                                    <th class="text-center">Answer3</th>
+                                    <th class="text-center">Answer4</th>
+                                    <th width="100px" class="text-center">Active</th>
+                                    <th style="width: 100px;">Delete</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <div id="test_div" class="mt-20">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /Candidates -->
+
+                <!-- Candidates -->
+                <div class="panel panel-flat">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Candidates</h5>
+                        <div class="heading-elements">
+                            <ul class="icons-list">
+                                <li><button type="button" class="btn bg-blue-400 btn-xs mr-10" data-toggle="modal" data-target="#modal_add_candidate">Add Candidate</button></li>
+                                <li><a data-action="collapse"></a></li>
+                                <li><a data-action="reload"></a></li>
+                                <!--                                <li><a data-action="close"></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dt_exam_candidate">
+                                <thead>
+                                <tr class="bg-teal-400">
+                                    <th width="120px" class="text-center">User ID</th>
+                                    <th class="text-center">Candidate Code</th>
+                                    <th class="text-center">Email</th>
+                                    <th class="text-center">First Name</th>
+                                    <th class="text-center">Last Name</th>
+                                    <th width="80px" class="text-center">Sex</th>
+                                    <th class="text-center">Birthday</th>
+                                    <th class="text-center">Telephone</th>
+                                    <th class="text-center">Address</th>
+                                    <th class="text-center">CNIB Number</th>
+                                    <th width="100px" class="text-center">Remove</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Candidates -->
+
+                <!-- Footer -->
+                <div class="footer text-muted">
+                    &copy; 2020. <a href="#">OMR Web App Kit</a> by <a href="#" target="_blank">Carlos</a>
+                </div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+<!-- Add Question & Answer modal -->
+<div id="modal_add_qa" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title">Add Question & Answer</h6>
+            </div>
+
+            <div class="modal-body">
+                <form class="form-horizontal qa-form-validate-jquery" action="#">
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">Question <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="text" id="question_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">Answer <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="text" id="answer_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" id="btn_save_new_qa">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add Question & Answer modal -->
+
+<!-- Add candidate modal -->
+<div id="modal_add_candidate" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title">Add Candidate</h6>
+            </div>
+
+            <div class="modal-body">
+                <form class="form-horizontal candidate-form-validate-jquery" action="#">
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">First Name <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="text" id="first_name_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">Last Name <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="text" id="last_name_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">Birthday <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="date" id="birthday_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">Candidate ID <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="text" id="candidate_id_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">Personal ID <span class="text-danger">*</span></label>
+                        <div class="col-lg-9">
+                            <input type="text" id="personal_id_input" class="form-control" required="required"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" id="btn_save_new_candidate">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add candidate modal -->
+<script src="main/js/config.js"></script>
+<script src="main/js/local_info.js"></script>
+<script src="main/js/navigation.js"></script>
+<script src="main/js/exam_create.js"></script>
+
+</body>
+</html>
